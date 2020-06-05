@@ -1,0 +1,25 @@
+<table style="border: 0px;">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nombre</th>
+            <th>email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for d in data if false != data  %}
+            <tr>
+                <td>{{d.id_user}}</td>
+                <td>{{d.name}}</td>
+                <td>{{d.email}}</td>
+            </tr>
+        {% else %}
+        <tr>
+            <td colspan="3">No hay resultados</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+
+
+</table>
